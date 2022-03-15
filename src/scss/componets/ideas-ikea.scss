@@ -3,35 +3,35 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
-		margin: 0 -10px;
+		align-items: stretch;
 	}
 	&__item{
 		text-decoration: none;
 		flex-direction: column;
 		display: flex;
-		width: calc(32.6% - 10px);
-		margin-left: 10px;
-		margin-right: 10px;
+		width: 32.3%;
 		&:not(:last-child){
 			margin-bottom: 20px;
 		}
-		&--gorisont{
-			flex-direction: row;
-			width: calc(65.9% - 10px);
-			max-height: 383px;
-			overflow: hidden;
-			.ideas-ikea__txt{
-				max-width: 316px;
-				flex: 1 1 100%;
-			}
-		}
-		&--vertical{
-		}
-		&--big{
+		&:last-child{
 			width: 100%;
 			flex-direction: row;
+			margin-right: 20px;
 			.ideas-ikea__txt{
-				width: 316px;
+				flex: 1 0 316px;
+			}
+		}
+		&--gorisont{
+			flex-direction: row;
+			width: 66.1%;
+			overflow: hidden;
+			.ideas-ikea__txt{
+				flex: 1 0 316px;
+			}
+			.ideas-ikea__img{
+				img{
+					max-height: 383px;
+				}
 			}
 		}
 	}

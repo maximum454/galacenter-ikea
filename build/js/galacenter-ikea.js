@@ -4,6 +4,7 @@ $(function (){
         columnWidth: '.ideas-ikea__body .ideas-ikea__item',
         animate: true,
         percentPosition: true,
+        gutter: 20,
     }
     $('.ideas-ikea__body').masonry(optionM);
 
