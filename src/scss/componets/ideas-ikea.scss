@@ -3,35 +3,37 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
-		align-items: stretch;
+		align-items: flex-start;
 	}
 	&__item{
 		text-decoration: none;
 		flex-direction: column;
 		display: flex;
 		width: 32.3%;
+		transition: color .3s ease;
 		&:not(:last-child){
 			margin-bottom: 20px;
 		}
 		&:last-child{
 			width: 100%;
 			flex-direction: row;
-			margin-right: 20px;
 			.ideas-ikea__txt{
 				flex: 1 0 316px;
 			}
 		}
 		&--gorisont{
 			flex-direction: row;
-			width: 66.1%;
+			width: 66%;
 			overflow: hidden;
+			height: 382px;
 			.ideas-ikea__txt{
 				flex: 1 0 316px;
 			}
-			.ideas-ikea__img{
-				img{
-					max-height: 383px;
-				}
+		}
+		&:hover{
+			.ideas-ikea__name{
+				color: #fff;
+				transition: color .3s ease;
 			}
 		}
 	}
@@ -55,6 +57,33 @@
 		color: #000000;
 		margin: 0 0 13px;
 	}
+	@include r(1280){
+		&__item{
+			width: 32%;
+			&--gorisont{
+				width: 66%;
+				height: 361px;
+			}
+		}
+	}
+	@include r(1024){
+		&__item{
+			width: 32%;
+			&--gorisont{
+				width: 66%;
+				height: 317px;
+			}
+		}
+	}
+	@include r(980){
+		&__item{
+			width: 31%;
+			&--gorisont{
+				width: 66%;
+				height: 304px;
+			}
+		}
+	}
 	@include r(767){
 		&__body{
 			display: flex;
@@ -67,20 +96,20 @@
 			flex-direction: column;
 			display: flex;
 			flex: 1 0 48%;
+			&:last-child{
+				max-width: 100%;
+				flex-direction: column;
+				.ideas-ikea__txt{
+					flex: 1 0 auto;
+				}
+			}
 			&--gorisont{
 				flex-direction: column;
 				width: 50%;
 				max-height: none;
+				height: auto;
 				.ideas-ikea__txt{
-					max-width: 100%;
 					flex: 1 0 auto;
-				}
-			}
-			&--big{
-				max-width: 1400px;
-				flex-direction: column;
-				.ideas-ikea__txt{
-					width: 100%;
 				}
 			}
 		}
