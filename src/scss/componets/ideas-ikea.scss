@@ -1,15 +1,20 @@
 .ideas-ikea{
 	&__body{
-		margin: 0 -10px;
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
+		margin: 0 -10px;
 	}
 	&__item{
 		text-decoration: none;
 		flex-direction: column;
 		display: flex;
 		width: calc(32.6% - 10px);
-		margin: 10px;
+		margin-left: 10px;
+		margin-right: 10px;
+		&:not(:last-child){
+			margin-bottom: 20px;
+		}
 		&--gorisont{
 			flex-direction: row;
 			width: calc(65.9% - 10px);
@@ -23,7 +28,7 @@
 		&--vertical{
 		}
 		&--big{
-			max-width: 1400px;
+			width: 100%;
 			flex-direction: row;
 			.ideas-ikea__txt{
 				width: 316px;
@@ -35,6 +40,7 @@
 			display: block;
 			object-fit: cover;
 			height: 100%;
+			width: 100%;
 		}
 	}
 	&__txt{
@@ -49,5 +55,54 @@
 		color: #000000;
 		margin: 0 0 13px;
 	}
-
+	@include r(767){
+		&__body{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			gap: 20px;
+		}
+		&__item{
+			text-decoration: none;
+			flex-direction: column;
+			display: flex;
+			flex: 1 0 48%;
+			&--gorisont{
+				flex-direction: column;
+				width: 50%;
+				max-height: none;
+				.ideas-ikea__txt{
+					max-width: 100%;
+					flex: 1 0 auto;
+				}
+			}
+			&--big{
+				max-width: 1400px;
+				flex-direction: column;
+				.ideas-ikea__txt{
+					width: 100%;
+				}
+			}
+		}
+		&__img{
+			height: 145px;
+			overflow: hidden;
+			img{
+				display: block;
+				object-fit: cover;
+				height: 100%;
+				width: 100%;
+			}
+		}
+		&__txt{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 12px 38px;
+		}
+		&__name{
+			font-size: 15px;
+			margin: 0;
+		}
+	}
 }

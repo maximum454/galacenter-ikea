@@ -6,4 +6,11 @@
 	.subtitle-ikea{
 		text-align: left;
 	}
+	@include r(767){
+		.subtitle-ikea{
+			span{
+				display: block;
+			}
+		}
+	}
 }

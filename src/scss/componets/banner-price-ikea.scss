@@ -1,0 +1,122 @@
+.banner-price-ikea{
+	margin-bottom: 43px;
+	&__body{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 60px 22px;
+	}
+	&__subtitle{
+		font-family: $font2;
+		font-size: 48px;
+		line-height: 54px;
+		letter-spacing: 0.05em;
+		text-transform: lowercase;
+		color: #000000;
+		margin: 0 0 20px;
+	}
+	&__title{
+		font-family: $font1;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 48px;
+		line-height: 54px;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		color: #000000;
+		margin: 0 0 36px;
+	}
+	&__item{
+		background-color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		width: calc(50% - 12px);
+		padding: 40px;
+		text-decoration: none;
+		position: relative;
+		&:first-child{
+			width: 100%;
+			background: linear-gradient(to bottom left, white 50%, yellow 50%);
+			padding: 70px 10px;
+			&:before{
+				content: '';
+				position: absolute;
+			}
+		}
+	}
+	&__icon{
+		margin: 0 0 14px;
+	}
+	&__name{
+		font-family: $font3;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 36px;
+		line-height: 54px;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		color: #000000;
+	}
+	&__anons{
+		font-family: $font2;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 54px;
+		letter-spacing: 0.05em;
+		color: #000000;
+		margin: 0;
+	}
+	&__btn{
+		font-family: $font2;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 54px;
+		letter-spacing: 0.05em;
+		text-decoration-line: underline;
+		text-transform: lowercase;
+		color: #C4C4C4;
+	}
+	@include r(767){
+		&__body{
+			gap: 32px;
+		}
+		&__subtitle{
+			font-size: 30px;
+			line-height: 54px;
+			margin: 0 0 3px;
+		}
+		&__title{
+			font-size: 30px;
+			line-height: 54px;
+			margin: 0 0 13px;
+		}
+		&__item{
+			width: 100%;
+			padding: 34px 10px;
+			&:first-child{
+				width: 100%;
+				background: linear-gradient(to bottom left, white 50%, yellow 50%);
+				padding: 10px 10px 33px;
+			}
+		}
+		&__icon{
+			margin: 0 0 14px;
+		}
+		&__name{
+			font-size: 30px;
+			line-height: 54px;
+		}
+		&__anons{
+			font-size: 15px;
+			line-height: 54px;
+		}
+		&__btn{
+			font-size: 24px;
+			line-height: 54px;
+		}
+	}
+}

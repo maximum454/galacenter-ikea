@@ -48,6 +48,7 @@ body {
   font-size: 64px;
   line-height: 54px;
   color: #000000;
+  margin: 0 0 28px;
 }
 
 .subtitle-ikea {
@@ -77,14 +78,127 @@ body {
   margin-bottom: 113px;
 }
 
-.ideas-ikea__body {
-  margin: 0 -10px;
+.banner-price-ikea {
+  margin-bottom: 43px;
+}
+
+.banner-price-ikea__body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 60px 22px;
+}
+
+.banner-price-ikea__subtitle {
+  font-family: "FuturaMediumC", sans-serif;
+  font-size: 48px;
+  line-height: 54px;
+  letter-spacing: 0.05em;
+  text-transform: lowercase;
+  color: #000000;
+  margin: 0 0 20px;
+}
+
+.banner-price-ikea__title {
+  font-family: "FuturaBookC", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 54px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0 0 36px;
+}
+
+.banner-price-ikea__item {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: calc(50% - 12px);
+  padding: 40px;
+  text-decoration: none;
+  position: relative;
+}
+
+.banner-price-ikea__item:first-child {
+  width: 100%;
+  background: -webkit-gradient(linear, right top, left bottom, color-stop(50%, white), color-stop(50%, yellow));
+  background: -o-linear-gradient(top right, white 50%, yellow 50%);
+  background: linear-gradient(to bottom left, white 50%, yellow 50%);
+  padding: 70px 10px;
+}
+
+.banner-price-ikea__item:first-child:before {
+  content: "";
+  position: absolute;
+}
+
+.banner-price-ikea__icon {
+  margin: 0 0 14px;
+}
+
+.banner-price-ikea__name {
+  font-family: "FuturaDemiC", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 54px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.banner-price-ikea__anons {
+  font-family: "FuturaMediumC", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 54px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin: 0;
+}
+
+.banner-price-ikea__btn {
+  font-family: "FuturaMediumC", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 54px;
+  letter-spacing: 0.05em;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  text-transform: lowercase;
+  color: #C4C4C4;
+}
+
+.ideas-ikea__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 -10px;
 }
 
 .ideas-ikea__item {
@@ -97,7 +211,12 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: calc(32.6% - 10px);
-  margin: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.ideas-ikea__item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .ideas-ikea__item--gorisont {
@@ -118,7 +237,7 @@ body {
 }
 
 .ideas-ikea__item--big {
-  max-width: 1400px;
+  width: 100%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -134,6 +253,7 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   height: 100%;
+  width: 100%;
 }
 
 .ideas-ikea__txt {
@@ -163,7 +283,155 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
+  .title-ikea {
+    font-size: 30px;
+    line-height: 54px;
+    margin: 0 0 3px;
+  }
+
+  .subtitle-ikea {
+    font-size: 30px;
+    margin: 0 0 25px;
+  }
+
   .banner-ikea {
     margin-bottom: 30px;
+  }
+
+  .banner-price-ikea__body {
+    gap: 32px;
+  }
+
+  .banner-price-ikea__subtitle {
+    font-size: 30px;
+    line-height: 54px;
+    margin: 0 0 3px;
+  }
+
+  .banner-price-ikea__title {
+    font-size: 30px;
+    line-height: 54px;
+    margin: 0 0 13px;
+  }
+
+  .banner-price-ikea__item {
+    width: 100%;
+    padding: 34px 10px;
+  }
+
+  .banner-price-ikea__item:first-child {
+    width: 100%;
+    background: -webkit-gradient(linear, right top, left bottom, color-stop(50%, white), color-stop(50%, yellow));
+    background: -o-linear-gradient(top right, white 50%, yellow 50%);
+    background: linear-gradient(to bottom left, white 50%, yellow 50%);
+    padding: 10px 10px 33px;
+  }
+
+  .banner-price-ikea__icon {
+    margin: 0 0 14px;
+  }
+
+  .banner-price-ikea__name {
+    font-size: 30px;
+    line-height: 54px;
+  }
+
+  .banner-price-ikea__anons {
+    font-size: 15px;
+    line-height: 54px;
+  }
+
+  .banner-price-ikea__btn {
+    font-size: 24px;
+    line-height: 54px;
+  }
+
+  .ideas-ikea__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 20px;
+  }
+
+  .ideas-ikea__item {
+    text-decoration: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 48%;
+            flex: 1 0 48%;
+  }
+
+  .ideas-ikea__item--gorisont {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 50%;
+    max-height: none;
+  }
+
+  .ideas-ikea__item--gorisont .ideas-ikea__txt {
+    max-width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+  }
+
+  .ideas-ikea__item--big {
+    max-width: 1400px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .ideas-ikea__item--big .ideas-ikea__txt {
+    width: 100%;
+  }
+
+  .ideas-ikea__img {
+    height: 145px;
+    overflow: hidden;
+  }
+
+  .ideas-ikea__img img {
+    display: block;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .ideas-ikea__txt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 12px 38px;
+  }
+
+  .ideas-ikea__name {
+    font-size: 15px;
+    margin: 0;
+  }
+
+  .footer-ikea .subtitle-ikea span {
+    display: block;
   }
 }
