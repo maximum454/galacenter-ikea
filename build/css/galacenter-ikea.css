@@ -57,6 +57,19 @@ body {
   font-size: 48px;
   line-height: 54px;
   color: #000000;
+  margin: 0 0 45px;
+  text-align: center;
+}
+
+.arrow-ikea {
+  background-color: #000;
+  background-image: url("../img/ideas-arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 39px;
+  width: 39px;
+  border-radius: 50%;
 }
 
 .banner-ikea {
@@ -64,12 +77,89 @@ body {
   margin-bottom: 113px;
 }
 
+.ideas-ikea__body {
+  margin: 0 -10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ideas-ikea__item {
+  text-decoration: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(32.6% - 10px);
+  margin: 10px;
+}
+
+.ideas-ikea__item--gorisont {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: calc(65.9% - 10px);
+  max-height: 383px;
+  overflow: hidden;
+}
+
+.ideas-ikea__item--gorisont .ideas-ikea__txt {
+  max-width: 316px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+}
+
+.ideas-ikea__item--big {
+  max-width: 1400px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.ideas-ikea__item--big .ideas-ikea__txt {
+  width: 316px;
+}
+
+.ideas-ikea__img img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+
+.ideas-ikea__txt {
+  background-color: #6AAFCF;
+  padding: 21px 17px;
+}
+
+.ideas-ikea__name {
+  font-family: "FuturaBookC", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 54px;
+  color: #000000;
+  margin: 0 0 13px;
+}
+
 .footer-ikea {
-  padding: 86px 0;
+  padding: 60px 0 86px;
 }
 
 .footer-ikea img {
   width: 100%;
+}
+
+.footer-ikea .subtitle-ikea {
+  text-align: left;
 }
 
 @media only screen and (max-width: 767px) {

@@ -1,0 +1,53 @@
+.ideas-ikea{
+	&__body{
+		margin: 0 -10px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__item{
+		text-decoration: none;
+		flex-direction: column;
+		display: flex;
+		width: calc(32.6% - 10px);
+		margin: 10px;
+		&--gorisont{
+			flex-direction: row;
+			width: calc(65.9% - 10px);
+			max-height: 383px;
+			overflow: hidden;
+			.ideas-ikea__txt{
+				max-width: 316px;
+				flex: 1 1 100%;
+			}
+		}
+		&--vertical{
+		}
+		&--big{
+			max-width: 1400px;
+			flex-direction: row;
+			.ideas-ikea__txt{
+				width: 316px;
+			}
+		}
+	}
+	&__img{
+		img{
+			display: block;
+			object-fit: cover;
+			height: 100%;
+		}
+	}
+	&__txt{
+		background-color: #6AAFCF;
+		padding: 21px 17px;
+	}
+	&__name{
+		font-family:$font1;
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 54px;
+		color: #000000;
+		margin: 0 0 13px;
+	}
+
+}
